@@ -2,7 +2,7 @@
 
 SELENIUM_IMAGE="hwwwi/python-chromedriver:python3-selenium-3.8.0"
 
-docker run -it \
+docker run --rm -it \
   --user=$(id -u):$(id -g) \
   -e USER=$(id -u) \
   -v /etc/passwd:/etc/passwd:ro \
