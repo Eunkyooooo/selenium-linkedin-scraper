@@ -55,6 +55,9 @@ linkedin_scraper/
 ├── LICENSE.md
 ├── README.md
 ├── result
+│   └── 201901061758
+│       ├── error.csv
+│       └── succeed.csv
 └── scraper.sh
 ```
 
@@ -71,6 +74,7 @@ More details about input.csv are following:
  * Must have 'company_name' column, it will only read this column
  * Redundant company_name will be treat as one company
  * You can put other column on input.csv such as company_id (check the default input.csv)
+ * Default delimiter for columns is ',' (comma)
 
 2. **Set blacklist**  
 I made a blacklist.txt to prevent unwanted company on company list.  
@@ -84,8 +88,9 @@ $ # For Mac and Ubuntu
 $ cd linkedin_scraper
 $ ./scraper.sh
 ```
-Result files will follow 'Year-Month-Day-Hour-Minute' name rules with csv format.  
-For example '201812271454.csv'.
+Result files will generated under directory named 'result/<YearMonthDayHourMinute>'.  
+One is the list of company with error code that couldn't find the result. Another one is the succeed list of company.  
+Check the example result directory.
 
 4. **Customize your docker image**  
 By default, It will use 'hwwwi/python-chromedriver:python3-selenium-3.8.0'.  
