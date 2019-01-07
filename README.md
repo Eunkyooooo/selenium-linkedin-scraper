@@ -102,6 +102,7 @@ And then, switch 'SELENIUM_IMAGE' on scraper.sh to your new image name.
 ## Authors
 
 * **Hwi Han** - *Initial work* - [hwwwi](https://github.com/hwwwi)
+* **Eunkyo Choi** - *Contributor* - [Eunkyooooo](https://github.com/Eunkyooooo)
 
 See also the list of [contributors](https://github.com/hwwwi/selenium-linkedin-scraper/contributors) who participated in this project.
 
